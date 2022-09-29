@@ -15,3 +15,11 @@
  - Create instance from model in viewModel .
  - ( Business Logic or presentation logic ) in ViewModel .
 
+# picture of project 🚀
+![alt text](./pictures/MVVMPattern.png)
+![alt text](./pictures/projectArc.png)
+![alt text](./pictures/ui.png)
+![alt text](./pictures/screen1.png)
+![alt text](./pictures/screen2.png)
+![alt text](./pictures/screen3.png)
+![alt text](./pictures/screen4.png)
