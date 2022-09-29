@@ -17,7 +17,7 @@ class CounterView extends StatelessWidget {
           style: TextStyle(fontSize: 18),
         ),
         centerTitle: true,
-      ),
+      ), 
       //--- body ----//
       body: Center(
         child: Column(

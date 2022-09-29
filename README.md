@@ -9,7 +9,7 @@
 # View & ViewModel 🚀
  - View inject viewModel or create instance from ViewModel .
  - View send action to viewModel .
- - ViewModel send state(date) to View . 
+ - ViewModel send state(date) to View .  
 
 # ViewModel && Model 🚀
  - Create instance from model in viewModel .
