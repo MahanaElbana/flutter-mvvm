@@ -27,4 +27,5 @@
 # how to switch github branch 👍
 ```
 git checkout -b posts_mvvm
+git push --set-upstream origin posts_mvvm
 ```
