@@ -15,7 +15,7 @@
  - Create instance from model in viewModel .
  - ( Business Logic or presentation logic ) in ViewModel .
 
-# picture of project 🚀
+# picture of counter 🚀
 ![alt text](./pictures/MVVMPattern.png)
 ![alt text](./pictures/projectArc.png)
 ![alt text](./pictures/ui.png)
@@ -23,3 +23,8 @@
 ![alt text](./pictures/screen2.png)
 ![alt text](./pictures/screen3.png)
 ![alt text](./pictures/screen4.png)
+
+# how to switch github branch 👍
+```
+git checkout -b posts_mvvm
+```
