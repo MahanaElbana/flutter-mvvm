@@ -2,15 +2,15 @@ class PostModel {
   int? userId;
   int? id;
   String? title;
-  String? body;
+  bool? completed;
 
-  PostModel({this.userId, this.id, this.title, this.body});
-
+  PostModel({this.userId, this.id, this.title, this.completed});
+  
   PostModel.fromJson(Map<String, dynamic> json) {
     userId = json['userId'];
     id = json['id'];
     title = json['title'];
-    body = json['body'];
+    completed = json['completed'];
   }
   
   // return map key and value
@@ -19,7 +19,7 @@ class PostModel {
     data['userId'] = this.userId;
     data['id'] = this.id;
     data['title'] = this.title;
-    data['body'] = this.body;
+    data['completed'] = this.completed;
     return data;
   }
 }

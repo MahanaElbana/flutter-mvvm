@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_mvvm/repository/posts/posts_api.dart';
 import 'package:flutter_mvvm/view_model/counter_view_model.dart';
-      //  ---  counter_view.dart --- //
+
+//  ---  counter_view.dart --- //
 class CounterView extends StatelessWidget {
   const CounterView({Key? key}) : super(key: key);
 
@@ -17,7 +19,7 @@ class CounterView extends StatelessWidget {
           style: TextStyle(fontSize: 18),
         ),
         centerTitle: true,
-      ), 
+      ),
       //--- body ----//
       body: Center(
         child: Column(
@@ -33,8 +35,13 @@ class CounterView extends StatelessWidget {
                 children: [
                   // --- increment UI (action) ---//
                   IconButton(
-                    onPressed: () =>
-                        setState(() => _counterViewModel.increment()),
+                    onPressed: () async{
+                      var p = new PostsApi();
+                      var postmodelData = await p.getAllPosts();
+                      print(postmodelData[0].completed.toString()) ;
+                      
+                      setState(() => _counterViewModel.increment());
+                    },
                     icon: Icon(Icons.add, color: Colors.purple[900]!),
                   ),
 
